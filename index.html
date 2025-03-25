@@ -153,6 +153,19 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
 
+        window.addEventListener("scroll", function () {
+    let botaoCurriculo = document.getElementById("botao-curriculo");
+    
+    if (window.scrollY > 300) {
+        botaoCurriculo.style.opacity = "1";
+        botaoCurriculo.style.visibility = "visible";
+    } else {
+        botaoCurriculo.style.opacity = "0";
+        botaoCurriculo.style.visibility = "hidden";
+    }
+});
+
+
 
     </script>
     <section>
@@ -171,6 +184,12 @@
     <button id="btnTopo" class="btn-topo" onclick="voltarAoTopo()">
         <i class="bi bi-arrow-up"></i>
     </button>
+
+    <a href="curriculo.pdf" download="Curriculo.pdf" id="botao-curriculo">
+        <i class="bi bi-download"></i> Currículo
+    </a>
+    
+    
 
 
 </body>
