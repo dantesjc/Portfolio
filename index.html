@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Dante | Portfólio</title>
+    <title>Dante Silva | Engenheiro de Software</title>
+    <meta name="description"
+        content="Portfólio de Dante Silva, Engenheiro de Software especializado em desenvolvimento web, arquitetura de software e práticas ágeis.">
+
 </head>
 
 <body>
@@ -53,42 +56,49 @@
 
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
+
+
+
         <div class="projetos-caixa">
 
-            <div class="projetos-card">
-                <img src="./img/pro4tech.png" alt="Projeto 1" class="projetos-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">API PRO4TECH</h3>
-                    <p class="paragrafo-projetos">Uma aplicação web, destinada a recrutar candidatos utilizando IA, com
-                        base
-                        nos requisitos de uma vaga de emprego criada por uma empresa registada no sistema</p>
+            <a href="https://github.com/Digital-Wave-6-API/API-6_Digital-Wave" class="projeto-link">
+                <div class="projetos-card">
+                    <img src="./img/pro4tech.png" alt="Projeto 1" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">API PRO4TECH</h3>
+                        <p class="paragrafo-projetos">Uma aplicação web, destinada a recrutar candidatos utilizando IA,
+                            com
+                            base nos requisitos de uma vaga de emprego criada por uma empresa registrada no sistema.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-
-            <div class="projetos-card">
-                <img src="./img/iacit.jpg" alt="Projeto 1" class="projetos-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">API IACIT</h3>
-                    <p class="paragrafo-projetos">Aplicação híbrida/responsiva, que funcione como Serviço de Atendimento
-                        ao
-                        Cliente (SAC), onde ele poderá criar ROs, verificar as solicitações criadas, entrar em contato
-                        via
-                        chat com o administrador</p>
+            <a href="https://github.com/PowerTech5API/iacity" class="projeto-link">
+                <div class="projetos-card">
+                    <img src="./img/iacit.jpg" alt="Projeto 2" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">API IACIT</h3>
+                        <p class="paragrafo-projetos">Aplicação híbrida/responsiva que funciona como Serviço de
+                            Atendimento ao Cliente (SAC), onde o usuário pode criar ROs, verificar solicitações e entrar
+                            em contato via chat.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="projetos-card">
-                <img src="./img/andamento.png" alt="Projeto 1" class="projetos-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">API EM ANDAMENTO</h3>
-                    <p class="paragrafo-projetos">Desenvolvimento de um site responsivo para uma nutricionista,
-                        permitindo o
-                        preenchimento de formulários pelos pacientes e o envio das informações ao profissional
-                        responsável.</p>
+            <a href="https://github.com/dantesjc/app-nutri" class="projeto-link">
+                <div class="projetos-card">
+                    <img src="./img/andamento.png" alt="Projeto 3" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">API EM ANDAMENTO</h3>
+                        <p class="paragrafo-projetos">Desenvolvimento de um site responsivo para uma nutricionista,
+                            permitindo o
+                            preenchimento de formulários pelos pacientes e o envio das informações ao profissional
+                            responsável.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
 
+        </div>
     </section>
 
     <section id="contato" class="contatos">
@@ -128,6 +138,21 @@
 
         }
 
+        // Mostrar o botão ao rolar a página
+        window.addEventListener("scroll", function () {
+            let btnTopo = document.getElementById("btnTopo");
+            if (window.scrollY > 300) {
+                btnTopo.classList.add("mostrar");
+            } else {
+                btnTopo.classList.remove("mostrar");
+            }
+        });
+
+        // Função para voltar ao topo suavemente
+        function voltarAoTopo() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
 
     </script>
     <section>
@@ -135,12 +160,17 @@
         <div class="social-media">
             <div class="btn-redes">
                 <a href="https://www.instagram.com/dante.siilva/"><button><i class="bi bi-instagram"></i></button></a>
-                <a href="https://www.linkedin.com/in/dante-silva-0a2a09a8/"><button><i class="bi bi-linkedin"></i></button></a>
+                <a href="https://www.linkedin.com/in/dante-silva-0a2a09a8/"><button><i
+                            class="bi bi-linkedin"></i></button></a>
                 <a href="https://github.com/dantesjc/"><button><i class="bi bi-github"></i></button></a>
             </div>
 
         </div>
-     </section>
+    </section>
+
+    <button id="btnTopo" class="btn-topo" onclick="voltarAoTopo()">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
 
 </body>
