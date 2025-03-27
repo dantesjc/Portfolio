@@ -44,13 +44,25 @@
         <h2 class="sobre-titulo">Sobre Mim </h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-                Sou pós-graduado em Engenharia de Software e graduado em Análise e Desenvolvimento de Sistemas pela
-                FATEC-SJC, com
-                experiência no desenvolvimento front-end na empresa Tecsus, em São José dos Campos-SP. Tenho interesse em arquitetura de
-                software, desenvolvimento web e práticas ágeis, buscando sempre aprimorar minhas habilidades e
-                acompanhar as tendências do mercado. Atualmente, meu objetivo é atuar como engenheiro de software,
-                contribuindo para projetos inovadores e escaláveis.
+                Pós-graduado em Engenharia de Software e graduado
+                em Análise e Desenvolvimento de Sistemas pela FATEC-SJC, com experiência no desenvolvimento front-end na
+                empresa Tecsus, em São José dos Campos-SP. Conhecimentos em:
             </p>
+            <ul class="sobre-paragrafo">
+                <li>Desenvolvimento Front-end: HTML,CSS,JavaScript,React JS.</li>
+                <li>Desenvolvimento Back-end: Java, Python, SQL Server.</li>
+                <li>Modelagem de Dados.</li>
+                <li>Gerenciamento de Projetos de Software.</li>
+                <li>Metodologias ágeis: Scrum Master, Product Owner.</li>
+                <li>Controle de versão: Git, GitHub.</li>
+                <li>Gestão Estratégica de TI (PETI).</li>
+                <li>Interação e Consumo de API.</li>
+            </ul>
+            <p class="sobre-paragrafo">
+                Sempre aprimorando minhas habilidades e acompanhando as tendências do mercado. Com objetivo de atuar
+                como engenheiro de software, contribuindo para projetos inovadores e escaláveis.
+            </p>
+            
         </div>
     </section>
 
@@ -154,16 +166,16 @@
         }
 
         window.addEventListener("scroll", function () {
-    let botaoCurriculo = document.getElementById("botao-curriculo");
-    
-    if (window.scrollY > 300) {
-        botaoCurriculo.style.opacity = "1";
-        botaoCurriculo.style.visibility = "visible";
-    } else {
-        botaoCurriculo.style.opacity = "0";
-        botaoCurriculo.style.visibility = "hidden";
-    }
-});
+            let botaoCurriculo = document.getElementById("botao-curriculo");
+
+            if (window.scrollY > 300) {
+                botaoCurriculo.style.opacity = "1";
+                botaoCurriculo.style.visibility = "visible";
+            } else {
+                botaoCurriculo.style.opacity = "0";
+                botaoCurriculo.style.visibility = "hidden";
+            }
+        });
 
 
 
@@ -188,8 +200,8 @@
     <a href="arquivo/curriculo.pdf" download="curriculo.pdf" id="botao-curriculo">
         <i class="bi bi-download"></i> Currículo
     </a>
-    
-    
+
+
 
 
 </body>

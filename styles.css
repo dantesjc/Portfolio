@@ -122,10 +122,18 @@ h1{
 }
 
 .sobre-paragrafo{
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
+    text-align: justify;
+    
    
 }
+
+.sobre-paragrafo li {
+    list-style-position: inside;
+    text-align: left;
+    
+}   
 
 .projetos{
     padding: 6rem 2rem;
